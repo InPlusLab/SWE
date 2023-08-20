@@ -1,0 +1,4 @@
+# Integer Overflow
+In smart contracts, an integer overflow occurs when an arithmetic operation on an integer variable exceeds the maximum value stored in that data type. For example, uint256 is a wide-used data type in smart contracts, which ranges from 0 to $2 ^ {256} - 1$. If two uint variables add beyond $2 ^ {256} - 1$, the calculation result is incorrectly returned as the overflow part $- 1$ (e.g., $2 ^ {256}$ would be returned as 0). Attackers can construct an input that causes a program variable to overflow to produce an unexpected program behavior.
+
+Before Solidity 0.8.0, the compiler will not report integer overflow, and developers must manually check the calculation result. Some famous libraries are created for overflow checks, such as SafeMath, and SignedSafeMath. After Solidity 0.8.0, the compiler adds the additional checks for the original supported arithmetic operators (e.g.+, -, *, and /).
