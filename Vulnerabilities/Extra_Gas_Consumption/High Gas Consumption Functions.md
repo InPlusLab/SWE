@@ -1,0 +1,3 @@
+# High Gas Consumption Functions
+
+There are two general aspects that can lead to extra gas in a function. The first aspect is the function type. Public functions will cost more gas than internal functions, as Solidity needs to allocate memories for the input parameters of public functions while that can be easily read from calldata for internal functions. Hence, functions that do not need to interact with external accounts should be clarified as internal functions. The second aspect this the parameter type. For public functions, the input parameters should be as simple as possible, avoiding complex data structures because the cost of copying complex data (e.g., int arrays) is higher than general data (e.g., int).
