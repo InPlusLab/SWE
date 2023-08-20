@@ -43,8 +43,8 @@ This is a repository for present the list of of common smart contract weakness.
   
   <tr>
     <td align="center" rowspan="1">4</td>
-    <td align="center" rowspan="1">Transaction Dependency</td>
-    <td align="center">Transaction Dependency</td> 
+    <td align="center" rowspan="1">Transaction Ordering Dependency</td>
+    <td align="center">Transaction Ordering Dependency</td> 
   </tr>
   
   <tr>
