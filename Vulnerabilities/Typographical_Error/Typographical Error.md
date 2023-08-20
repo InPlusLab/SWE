@@ -1,0 +1,3 @@
+# Typographical Error
+
+A typographical error in a smart contract refers to an error caused by a developer's carelessness during its development, which can include misspelling variable names, using the wrong type or order of operators, and other similar mistakes. For example, consider when a developer intends to sum a number with a variable using the *+=* operator, but accidentally uses the *=+* operator, which is a valid operator, and initializes the variable again instead of calculating the sum. To prevent this problem, smart contract developers should take measures such as double-checking critical code in their contracts or utilizing a vetted library, such as the SafeMath developed by OpenZeppelin.
