@@ -206,3 +206,19 @@ This is a repository for present the list of of common smart contract weakness.
     <td align="center">Shadowed Elements</td> 
   </tr>
   
+# Update Mechanism
+We propose an update mechanism for the smart contract weaknesses list. The update mechanism consists of two types: regular updates and irregular updates.
+
+## Regular Update
+The regular updates are achieved by collecting and categorizing new papers on smart contract weaknesses after their publication.
+
+* Step 1: Once relevant recollections and journal papers related to smart contract weaknesses have been published, researchers will read the papers and generate cards for card sorting.
+* Step 2: At least two experienced smart contract researchers will classify the smart contract weaknesses using the open card sorting method. In case of disagreement between the two researchers, a third experienced researcher will make the final decision.
+  
+## Irregular Update
+An irregular update occurs when a user submits a new smart contract weakness to the weakness list maintainer, e.g., from our GitHub repository.
+
+* Step 1: Users report new smart contract weaknesses based on specific criteria, including the weakness's name and definition, as well as the field to which the weakness belongs.
+* Step 2: The maintainer of the smart contracts weakness list will select a group of experienced smart contract researchers, who will each assess the reported weakness and determine whether it meets the criteria for inclusion as a new weakness on the list.
+* Step 3: Once the researchers have individually assessed the weakness, they will convene and vote on whether to include it in the list of weaknesses. Each researcher will provide their reasoning for their decision. If the majority of researchers agree, the maintainer will add the weakness to the smart contract weaknesses list.
+* Step 4: The maintainer will send an email response to the user who reported the weakness. If the weakness is deemed ineligible for inclusion in the weaknesses list, the reason for the rejection will also be explained.
