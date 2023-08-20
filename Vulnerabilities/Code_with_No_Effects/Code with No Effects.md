@@ -1,0 +1,3 @@
+# Code with No Effects
+
+Code with No Effects in smart contracts refers to code that does not execute the intended action correctly. In some specific cases, code not executed correctly can create security vulnerabilities. For instance, in *call.value(address(this).balance)("")*, if the final bracket is missing, the function may execute without transferring funds to the intended recipient, which could potentially result in a loss of funds. To ensure smart contracts do not contain code not executed correctly, smart contract developers may write unit tests that confirm the intended behavior of the code.
