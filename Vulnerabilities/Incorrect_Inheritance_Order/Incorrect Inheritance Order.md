@@ -1,0 +1,5 @@
+# Incorrect Inheritance Order
+
+Incorrect inheritance order refers to the situation where a parent contract is inherited in the wrong order. Solidity allows for multiple inheritances, which means that a contract can inherit from multiple other contracts. This introduces an ambiguity known as the Diamond Problem: if two or more base contracts define the same function, which one should be called in the child contract? To resolve this ambiguity, Solidity uses reverse C3 linearisation, which establishes priorities between the base contracts. Therefore, the order of inheritance is crucial, as ignoring it may result in unexpected behavior. 
+
+Suppose a contract inherits from multiple base contracts, and those contracts define functions or state variables with the same name. In that case, an incorrect inheritance order can result in unintended function calls or conflicting state variables. This can lead to unexpected behavior that is difficult to predict and control. To avoid these potential issues, smart contract developers should carefully specify the inheritance in the correct order. A good practice is to inherit contracts from more generic to more targeted.
