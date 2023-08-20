@@ -1,0 +1,3 @@
+# Strict Balance Equality
+
+Smart contracts often determine the current status by checking the contract balance. For example, in a crowdfunding contract, the contract determines whether the crowdfunding has been successful based on the amount of balance raised. Using *==* to determine if the balance is equal to a specific value is too ideal, especially when other accounts are allowed to transfer more balance to the contract. If strict balance equality is utilized in the last example, the fundraiser that raises more money than it expects to receive is also considered a failure. Therefore, a more practical condition is using *>=* or *<=* to determine whether the balance meets the requirement.
