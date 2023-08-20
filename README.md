@@ -101,7 +101,7 @@ This is a repository for present the list of of common smart contract weakness.
   <tr>
     <td align="center" rowspan="2">11</td>
     <td align="center" rowspan="2">Denial of Service (DoS)</td>
-    <td align="center">DoS of Failed Calls/td> 
+    <td align="center">DoS of Failed Calls</td> 
   </tr>
   <tr>
     <td align="center">DoS of Gas Limit</td> 
