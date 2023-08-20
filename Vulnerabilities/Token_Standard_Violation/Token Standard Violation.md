@@ -1,0 +1,3 @@
+# Token Standard Violation
+
+Solidity-based tokens can exhibit inconsistent behaviors for various reasons, including flawed design and implementation. Such flaws can lead to an incorrect method invocation, lack of proper event modification, improper implementation of fee-charging or token minting/burning, standard method invocation, and unit conversion. Additionally, modification of the balance of a specified account or transfer of a specified amount of tokens, rather than those indicated by standard method interfaces or events, can cause inconsistencies. To ensure reliable and secure token performance, developers and users of Solidity-based tokens must be aware of these potential issues and take appropriate measures to address them.
