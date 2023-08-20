@@ -1,0 +1,3 @@
+# Unsafe Self Destruct
+
+The selfdestruct function is a built-in function in Ethereum that allows a contract to be removed from the blockchain and transfer all its remaining Ether to the owner's address. Typically, the owner should only invoke the selfdestruct function, but anyone can kill the contract if there is a lack of access control to the selfdestruct function. In addition, if the killed contract is relied on by other contracts, it will make other contracts unusable to further execute and even lock up assets. A famous real-world attack case is the Parity Wallet, whose signature contract was destroyed by hackers, ultimately losing over 30 million dollars.
