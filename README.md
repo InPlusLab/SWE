@@ -205,6 +205,7 @@ This is a repository for present the list of of common smart contract weakness.
     <td align="center" rowspan="1">Shadowed Elements</td>
     <td align="center">Shadowed Elements</td> 
   </tr>
+  </table>
   
 ## Update Mechanism
 We propose an update mechanism for the smart contract weaknesses list. The update mechanism consists of two types: regular updates and irregular updates.
