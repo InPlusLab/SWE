@@ -1,0 +1,3 @@
+# Uninitialized Storage Pointer
+
+The storage pointer in a smart contract serves as a means to access and manage the smart contract's storage space. However, if a storage pointer is not initialized before it is used, this can result in various problems. Firstly, accessing unallocated storage can occur if an uninitialized storage pointer points to unallocated storage, leading to unexpected errors and behavior. Secondly, reading or writing uncertain data is also possible, which can result in unpredictable behavior, such as reading or writing random values, overwriting other data, or even causing the smart contract to crash.
