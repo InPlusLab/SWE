@@ -3,6 +3,7 @@ Reentrancy is a common weakness in smart contracts.
 
 This weakness is related to the fallback mechanism of Ether and other tokens. 
 The fallback mechanism allows the executed contract to switch contexts to other external contracts after performing some specific operations (e.g., ether/token transfer).
+
 For example, a smart contract can define an anonymous fallback function that will be automatically executed when the contract receives Ethers. By re-invoking the external function in the fallback function, a malicious contract can circularly execute the transfer logic in the external function.
 Notably, the fallback function is executed immediately after the transfer rather than after the entire external function has been executed. 
 Hence, if the victim contract only updates the important variables (e.g., recording and limiting the transfer amount) after the transfer operation, the malicious contract can successfully execute multiple unchecked transfer operations before the contract state changes. Similar to Ether transfer, reentrancy attacks can also occur in token contracts, and developers should pay attention to functions with fallback-like execution conditions.
