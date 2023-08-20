@@ -206,16 +206,16 @@ This is a repository for present the list of of common smart contract weakness.
     <td align="center">Shadowed Elements</td> 
   </tr>
   
-# Update Mechanism
+## Update Mechanism
 We propose an update mechanism for the smart contract weaknesses list. The update mechanism consists of two types: regular updates and irregular updates.
 
-## Regular Update
+### Regular Update
 The regular updates are achieved by collecting and categorizing new papers on smart contract weaknesses after their publication.
 
 * Step 1: Once relevant recollections and journal papers related to smart contract weaknesses have been published, researchers will read the papers and generate cards for card sorting.
 * Step 2: At least two experienced smart contract researchers will classify the smart contract weaknesses using the open card sorting method. In case of disagreement between the two researchers, a third experienced researcher will make the final decision.
   
-## Irregular Update
+### Irregular Update
 An irregular update occurs when a user submits a new smart contract weakness to the weakness list maintainer, e.g., from our GitHub repository.
 
 * Step 1: Users report new smart contract weaknesses based on specific criteria, including the weakness's name and definition, as well as the field to which the weakness belongs.
