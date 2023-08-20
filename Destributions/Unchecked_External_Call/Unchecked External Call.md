@@ -1,0 +1,4 @@
+# Unchecked External Call
+
+Unchecked external call is a weakness associated with unhandled return values of external calls.
+In blockchain platforms like Ethereum, contracts can interact with other contracts via external calls, such as \verb|send()|. However, these functions may fail due to network or out-of-gas errors. If errors occur, these functions do not throw any exception. Similar errors may also occur in other call types, such as \verb|call()|, and \verb|delegatecall()|. These functions will return a false value after this error, and the vulnerability occurs when the contract does not check the return values properly. In that case, the contract cannot ensure the external calls succeed. For some popular external calls, such as ERC20 token transfer~\cite{ERC20}, some tools (e.g., SafeERC20 library~\cite{Openzeppelin_SafeERC20}) have been developed to handle return values, which is also a good paradigm for handling return values.
