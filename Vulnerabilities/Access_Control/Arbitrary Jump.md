@@ -1,0 +1,3 @@
+# Arbitrary Jump
+
+In Solidity, function types are supported to hold a reference to a function with a matching signature. When a hacker is able to arbitrarily change a function type variable, they can execute random code instructions. While Solidity does not support pointer arithmetic, which limits changing variables to arbitrary values, there are cases where an attacker can exploit certain assembly instructions, such as the *mstore* or assignment operators. In the worst case, this weakness is more severe than Arbitrary Write, as function variables theoretically allow an attacker to manipulate function type variables to point to any code instruction, bypassing the necessary validation and causing an unexpected change in program state.
