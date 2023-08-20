@@ -1,0 +1,4 @@
+# Transaction Ordering Dependency
+Transaction Ordering Dependency arises from the fact that the order in which transactions get processed by the network may impact the execution of the smart contract. As Solidity transactions are processed in a decentralized environment, the order of execution can be affected by various factors such as network congestion, gas prices, and timing. 
+
+For example, in an auction scenario, a hacker could read and analyze bids from other participants to arrive at the optimal price and prioritize transactions with the contract by raising the gas fee. The auction contract can use incoming encryption to prevent the transaction information from being interpreted. It is important for developers to be aware of TOD vulnerabilities and to carefully consider the potential ordering of transactions when designing and implementing smart contracts.
