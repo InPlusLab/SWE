@@ -1,0 +1,3 @@
+# Unused Elements
+
+Unused elements refer to code within smart contracts that are not utilized, such as unused variables and functions. Solidity permits the presence of unused code, which does not pose any immediate security risks. However, the presence of unused code in smart contracts can have multiple negative effects. Firstly, it consumes storage space and increases execution time, leading to higher costs and longer deployment and transaction times. Additionally, it can decrease the readability of the smart contract, which can make it more difficult for developers to understand and maintain it. Therefore, it is highly recommended to thoroughly examine smart contracts and eliminate unused code.
