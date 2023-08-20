@@ -1,0 +1,3 @@
+# Floating Pragma
+
+Floating pragma means that a smart contract utilizes an unlocked pragma declaration, a keyword in the Solidity language that informs the Solidity compiler on handling the source code. The floating pragma can result in version compatibility issues that render the code incompatible with different versions of the Solidity compiler. As a result, the smart contract may fail to compile or produce unpredictable errors. Additionally, the use of a floating pragma could expose smart contracts to known security weaknesses if they utilize outdated Solidity compilers. To ensure both version compatibility and security in smart contracts, it is crucial to lock the pragma version and take into account any known bugs in the selected compiler version.
